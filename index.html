@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samuel Ko Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class = "logo">
+                <li><a href="#home">SK</a></li>
+            </ul>
+            <ul class = "buttons">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+        <section id="home">
+            <h1 class = "header">Hi, I'm Samuel Ko</h1>
+            <p class = "subheader">Welcome to my Portfolio</p> <br>
+            <div class = "headerBar">
+                <a class = "landingLink" href = "https://github.com/SamKoCPSC" target="_blank">GitHub</a>
+                <a class = "landingLink" href = "https://www.linkedin.com/in/SamuelKo3180/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+        <section id="about">
+            <h1 class = "header">About Me</h1>
+            <p class = "subheader">Hello, my name is Samuel Ko, and I am currently a third-year student at the University of British Columbia,
+                studying for a Bachelors in Computer Science. I started programming in High School when I took a 
+                course called AP Computer Science, and it has become my passion ever since. In particular, my professional 
+                interests are Web Development, App Development, and Machine Learning, but I am fascinated by all the 
+                different aspects and fields of Computer Science. I am a self-driven and motivated person who loves to 
+                work and talk with other people.<br><br>
+                If you would like to contact me, I'd love to hear from you via my e-mail or phone. <br>
+                E-mail: samk3180@gmail.com <br>
+                Phone: 778-388-5328
+            </p>
+        </section>
+        <section id="projects">
+            <h1 class = "header">Projects</h1>
+            <p class = "subheader">Here are some of the projects that I have worked on</p>
+            <br><br>
+            <p class = "title">Sorting Visualizer</p>
+            <p class = "description">A webpage created with React. Designed to help people understand the processes and logic behind various sorting algorithms. Features a simple UI to 
+                allow for control of properties such as array size, speed, and degree of randomness
+            </p>
+            <div class = "showcase">
+                <img src = "Sorting thumbnail.png" alt = "Sorting Thumbnail" class = "thumbnail">
+                <a class = "thumbnailButton1" href="Sorter/build/index.html" target="_blank">View Project</a>
+                <a class = "thumbnailButton2" href="https://github.com/SamKoCPSC/Sorter" target="_blank">View Code</a>
+            </div>
+            <br>
+            <p class = "title">Pathfinding Visualizer</p>
+            <p class = "description">A project that I developed with basic JavaScript, HTML, and CSS. Visualizes the process of Dikjstra's Algorithm for finding 
+                the shortest path in a grid based graph. Features a user interactable grid to allow modification of the grid layout such as 
+                adding walls or weights. Allows for multiple start and end points.
+            </p>
+            <div class = "showcase">
+                <img src = "Pathfinding thumbnail.png" alt = "Pathfinding Thumbnail" class = "thumbnail">
+                <a class = "thumbnailButton1" href="Pathfinder/Pathfinder.html" target="_blank">View Project</a>
+                <a class = "thumbnailButton2" href="https://github.com/SamKoCPSC/Pathfinder" target="_blank">View Code</a>
+            </div>
+            <br>
+            <p class = "title">Text Analyzer</p>
+            <p class = "description">A mini-app coded in Java, designed using the JavaFX library, and tested with JUnit. Analyzes the contents 
+                of user input and outputs results such as character count, or reversed string. Features a save and load system using text files 
+                that can load the results from previous iterations.
+            </p>
+            <div class = "showcase">
+                <img src = "Text Analyzer Thumbnail.PNG" alt = "Text Analyzer Thumbnail" class = "thumbnail">
+                <a class = "thumbnailButton3" href="https://github.com/SamKoCPSC/Pathfinder" target="_blank">View Code</a>
+            </div>
+        </section>
+        <!-- <section id="contact">
+            <h1 class = "header">Contact</h1>
+            <p></p>
+        </section> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
