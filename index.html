@@ -2,29 +2,30 @@
 <html lang = "en">
 <head>
     <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0 minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Samuel Ko Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="container">
         <nav class="navbar">
-            <ul class = "logo">
+            <!-- <ul class = "logo">
                 <li><a href="#home">SK</a></li>
-            </ul>
+            </ul> -->
             <ul class = "buttons">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
         <section id="home">
-            <h1 class = "header">Hi, I'm Samuel Ko</h1>
-            <p class = "subheader">Welcome to my Portfolio</p> <br>
-            <div class = "headerBar">
+            <h1 class = "header" data-aos = "fade-left" data-aos-once="true">Hi, I'm Samuel Ko</h1>
+            <p class = "subheader" data-aos = "fade-right" data-aos-once="true">Welcome to my Portfolio</p> <br>
+            <div class = "headerBar" data-aos = "fade-left" data-aos-once="true">
                 <a class = "landingLink" href = "https://github.com/SamKoCPSC" target="_blank">GitHub</a>
                 <a class = "landingLink" href = "https://www.linkedin.com/in/SamuelKo3180/" target="_blank">LinkedIn</a>
             </div>
@@ -47,43 +48,97 @@
             <p class = "subheader">Here are some of the projects that I have worked on</p>
             <br><br>
             <p class = "title">Sorting Visualizer</p>
-            <p class = "description">A webpage created with React. Designed to help people understand the processes and logic behind various sorting algorithms. Features a simple UI to 
+            <p class = "description">A webpage created with <em><b>React</b></em>. Designed to help people understand the processes and logic behind various sorting algorithms. Features a simple UI to 
                 allow for control of properties such as array size, speed, and degree of randomness
             </p>
-            <div class = "showcase">
-                <img src = "Sorting thumbnail.png" alt = "Sorting Thumbnail" class = "thumbnail">
+            <div class = "imageWrapper" data-aos = "fade-right">
+                <img src = "Sorter/Sorting thumbnail.png" alt = "Sorting Thumbnail" class = "thumbnail">
                 <a class = "thumbnailButton1" href="Sorter/index.html" target="_blank">View Project</a>
                 <a class = "thumbnailButton2" href="https://github.com/SamKoCPSC/Sorter" target="_blank">View Code</a>
             </div>
             <br>
             <p class = "title">Pathfinding Visualizer</p>
-            <p class = "description">A project that I developed with basic JavaScript, HTML, and CSS. Visualizes the process of Dikjstra's Algorithm for finding 
+            <p class = "description">A project that I developed with basic <em><b>JavaScript, HTML and CSS</b></em>. 
+                Visualizes the process of <em><b>Dikjstra's Algorithm</b></em> for finding 
                 the shortest path in a grid based graph. Features a user interactable grid to allow modification of the grid layout such as 
                 adding walls or weights. Allows for multiple start and end points.
             </p>
-            <div class = "showcase">
-                <img src = "Pathfinding thumbnail.png" alt = "Pathfinding Thumbnail" class = "thumbnail">
+            <div class = "imageWrapper" data-aos = "fade-left">
+                <img src = "Pathfinder/Pathfinding thumbnail.png" alt = "Pathfinding Thumbnail" class = "thumbnail">
                 <a class = "thumbnailButton1" href="Pathfinder/Pathfinder.html" target="_blank">View Project</a>
                 <a class = "thumbnailButton2" href="https://github.com/SamKoCPSC/Pathfinder" target="_blank">View Code</a>
             </div>
             <br>
             <p class = "title">Text Analyzer</p>
-            <p class = "description">A mini-app coded in Java, designed using the JavaFX library, and tested with JUnit. Analyzes the contents 
+            <p class = "description">A mini-app coded in <em><b>Java</b></em>, designed using the <em><b>JavaFX</b></em> library, and tested with <em><b>JUnit</b></em>. Analyzes the contents 
                 of user input and outputs results such as character count, or reversed string. Features a save and load system using text files 
                 that can load the results from previous iterations.
             </p>
-            <div class = "showcase">
-                <img src = "Text Analyzer Thumbnail.PNG" alt = "Text Analyzer Thumbnail" class = "thumbnail">
-                <a class = "thumbnailButton3" href="https://github.com/SamKoCPSC/Text-Analyzer" target="_blank">View Code</a>
+            <div class = "imageWrapper" data-aos = "fade-right">
+                <img src = "Text Analyzer/Text Analyzer Thumbnail.PNG" alt = "Text Analyzer Thumbnail" class = "thumbnail">
+                <a class = "thumbnailButton1" href="Text Analyzer/Text Analyzer.jar" download>View Project</a>
+                <a class = "thumbnailButton2" href="https://github.com/SamKoCPSC/Text-Analyzer" target="_blank">View Code</a>
             </div>
         </section>
-        <!-- <section id="contact">
-            <h1 class = "header">Contact</h1>
-            <p></p>
-        </section> -->
+        <section id = "skills">
+            <h1 class = "header">Skills</h1>
+            <p class = "subheader">
+                Here is an overview of my skillset
+            <div class="skillGrid">
+                <div class="skillBox">
+                    <h2>Java</h2>
+                    <p>Experience: 20 months <br>My most used language, as it was the core language in my intro courses, as well as for both my
+                    courses in Object-Oriented Programming. I have learned, and am familiar with the core principles such as abstraction, encapsulation
+                    inheritance, and polymorphism. 
+                    </p>
+                </div>
+                <div class="skillBox">
+                    <h2>JavaScript</h2>
+                    <p>Experience: 5 months <br>The language I learn most in my own time. I learn it alongside HTML and CSS. I have used it to script the functional
+                        parts of most of my own projects, and it is the main language that I am continually practicing currently.
+                        I am familiar with the specifics such as high-order array functions, arrow functions, promises, and destructuring.
+                    </p>
+                </div>
+                <div class="skillBox">
+                    <h2>C/C++</h2>
+                    <p>Experience: 12 months <br>Mainly used as the core language of both my Data Structures and Algorithms courses, and a course on 
+                    Computer Systems, which explored lower level programming. I have learned about pointers, and memory management, as well as all
+                    things linked lists, trees, and graphs, and also hashing, sorting, and searching.
+                    </p>
+                </div>
+                <div class="skillBox">
+                    <h2>JUnit</h2>
+                    <p>Experience: 8 months <br>The testing framework used in my courses on Object-Oriented Programming for learning about unit testing
+                    principles. Concepts like, test isolation, thourough coverage and edge case consideration were practiced extensively. Most of my course work
+                    in Java involved unit testing.
+                    </p>
+                </div>
+                <div class="skillBox">
+                    <h2>React</h2>
+                    <p>Experience: 2 months <br>I have used this framework for creating my Sorting Visualizer project. It is the framework that I am currently practicing most.
+                    I find its fundamental ideas like components, state, and JSX syntax to be very convienient for web page design.
+                    </p>
+                </div>
+                <div class="skillBox">
+                    <h2>JavaFX and Java Swing</h2>
+                    <p>Experience: 4 months <br>I have experience in both for about 2 months each. Java Swing was used primarily on graphical projects in 
+                    my course work, while I used JavaFX for designing my Text Analyzer project. I found the optional integration of CSS style syntax for styling components 
+                    in JavaFX to be a convienient alternative to manually setting attributes.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 40,
+            duration: 1000,
+            mirror: true,
+        });
+      </script>
 </body>
 
 </html>

@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+/* html {
+    font-size: 62.5%;
+} */
+
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Poppins', sans-serif;
@@ -11,7 +15,7 @@ body {
     color: white;
     line-height: 1.6;
     height: 100vh;
-    /* position: fixed; */
+    /* font-size: 1.4rem; */
     overflow-x: hidden;
 }
 
@@ -40,11 +44,12 @@ body {
 }
 
 .navbar ul li {
-    margin: 0 1rem;
-    padding: 1rem 0.2rem;
+    margin: 0 0.5rem; 
+    padding: 1rem 0.1rem;
 }
 
 .navbar ul li a {
+    font-size: 1rem;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -58,21 +63,20 @@ body {
     color: skyblue;
 } */
 
-.logo {
+/* .logo {
 
     justify-content: flex-start;
 }
 
 .logo li a {
-    font-size: 2vw;
+    font-size: 4.8rem;
     padding: 0.5rem 0.8rem;
-    /* outline: solid; */
     border-style: solid;
     border-color: white;
     border-radius: 50%;
-}
+} */
 
-#home, #about, #projects, #contact { 
+#home, #about, #projects, #skills { 
     display: flex;
     flex-direction: column;
 }
@@ -90,8 +94,8 @@ body {
 }
 
 .landingLink {
-    font-size: 1.5vmax;
-    padding: 1rem 3rem;
+    font-size: 20px;
+    padding: 10px;
     border-style: solid;
     border-radius: 3rem;
     color: white;
@@ -103,28 +107,12 @@ body {
     cursor: pointer;
 } */
 
-#projects {
-    width: 100%;
-    height: 2750px;
-    align-items: center;
-    text-align: center;
-    background: black;
-    color: white;
-}
-
-#contact {
-    background-color: white;
-    width: 100%;
-    height: 250px;
-    color: black;
-}
-
 .header {
-    font-size: 4vmax;
+    font-size: 38px;
 }
 
 .subheader {
-    font-size: 2vmax;
+    font-size: 19px;
 }
 
 #home {
@@ -135,6 +123,7 @@ body {
 }
 
 #about {
+    height: 900px;
     background-image: linear-gradient(to bottom ,rgb(0, 10, 44), rgb(0, 0, 0));
 }
 
@@ -144,19 +133,28 @@ body {
 }
 
 #about h1{
-    margin-top: 8vh;
+    margin-top: 7%;
 }
 
 #about p {
-    font-size: 1.85vmax;
+    font-size: 16px;
+}
+
+#projects {
+    width: 100%;
+    height: 1450px;
+    align-items: center;
+    text-align: center;
+    background: black;
+    color: white;
 }
 
 .title {
-    font-size: 3vmax;
+    font-size: 25px;
     text-decoration: underline;
 }
 
-.showcase {
+.imageWrapper {
     /* padding-left: 10%;
     padding-right: 10%; */
     position: relative;
@@ -166,8 +164,8 @@ body {
 }
 
 .description {
-    font-size: 2vmax;
-    padding: 0 50px 0 50px;
+    font-size: 4vw;
+    /* padding: 0 1vw 0 1vw; */
 }
 
 .thumbnail{
@@ -184,7 +182,7 @@ body {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 16px;
     text-align: center;
     border-style: solid;
     border-radius: 3rem;
@@ -206,26 +204,116 @@ body {
     -ms-transform: translate(-50%, -50%);
 }
 
-.thumbnailButton3 {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.showcase:hover .thumbnail {
+.imageWrapper:hover .thumbnail {
     opacity: 0.3;
     filter: blur(2px);
 }
 
-.showcase:hover .thumbnailButton1, .showcase:hover .thumbnailButton2, .showcase:hover .thumbnailButton3 {
+.imageWrapper:hover .thumbnailButton1, .imageWrapper:hover .thumbnailButton2 {
     opacity: 1;
 }
 
-.buttons li a:hover, .landingLink:hover , .thumbnailButton1:hover, .thumbnailButton2:hover, .thumbnailButton3:hover{
+.buttons li a:hover, .landingLink:hover , .thumbnailButton1:hover, .thumbnailButton2:hover {
     color: skyblue;
     cursor: pointer;
 }
+
+#skills {
+    width: 100%;
+    height: 2300px;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(104, 0, 0));
+    color: white;
+}
+
+.skillGrid {
+    display: grid;
+    padding-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-template-columns: 1fr;
+}
+
+.skillBox {
+    font-size: 16px;
+    border-style: solid;
+}
+
+
+@media (min-width: 400px) {
+    #about p, .subheader, .description, .skillBox {
+        font-size: 18px;
+    }
+    #projects {
+        height: 1800px;
+    }
+}
+
+@media (min-width: 650px) {
+    #about h1 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 50px;
+    }
+    #about p, .subheader, .description, .thumbnailButton1, .thumbnailButton2 {
+        font-size: 22px;
+    }
+    #projects {
+        height: 2400px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    #skills {
+        height: 1700px;
+    }
+    .skillGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .header {
+        font-size: 70px;
+    }
+    #about p, .subheader, .description, .thumbnailButton1, .thumbnailButton2 {
+        font-size: 25px;
+    }
+    #projects {
+        height: 2600px;
+    }
+    .title {
+        font-size: 42px;
+    }
+    #skills {
+        height: 1200px;
+    }
+    .skillGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header {
+        font-size: 90px;
+    }
+    #about p, .subheader, .description, .thumbnailButton1, .thumbnailButton2 {
+        font-size: 30px;
+    }
+    #projects {
+        height: 2800px;
+    }
+    .title {
+        font-size: 60px;
+    }
+    #skills {
+        height: 900px;
+    }
+}
+
+
 
 @media (max-width: 1060px) {
     .thumbnail {
@@ -234,10 +322,10 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .thumbnail {
         width: 96vw;
         height: 48vw;
     }
-}
+} */
 
